@@ -1,7 +1,6 @@
 ---
 title: "Input/output des messages"
-draft: false
-type: "cours"
+
 ---
 
 En Ruby, l’entrée et la sortie de données servent à communiquer avec l’utilisateur. Pour afficher un message à l’écran, on utilise surtout puts et print. La commande puts affiche un message et retourne automatiquement à la ligne suivante, tandis que print affiche un message sans retour à la ligne. Il y a également p qui affiche la valeur exacte d’une valeur. Par exemple, puts "Bonjour" affiche le message sur une ligne (Bonjour), p affichera la même chose avec la valeur exacte ("Bonjour") et print "Bonjour" laisse le curseur sur la même ligne.

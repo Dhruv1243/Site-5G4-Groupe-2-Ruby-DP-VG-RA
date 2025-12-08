@@ -1,7 +1,6 @@
 ---
 title: "Les Types de Données"
-draft: false
-type: "cours"
+
 ---
 
 Les Types de Données
