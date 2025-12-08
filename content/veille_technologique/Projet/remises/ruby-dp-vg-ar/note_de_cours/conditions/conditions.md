@@ -17,7 +17,7 @@ Un opérateur logique est utilisé dans une expression logique pour produire une
 |----------|-------------|
 | `!` (NON) | Inverse la valeur d’un booléen ou d’une expression |
 | `&&` (ET) | Renvoie `true` si **toutes** les conditions sont vraies |
-| `||` (OU) | Renvoie `true` si **au moins une** des conditions est vraie |
+| `\|\|` (OU) | Renvoie `true` si **au moins une** des conditions est vraie |
 
 
 
