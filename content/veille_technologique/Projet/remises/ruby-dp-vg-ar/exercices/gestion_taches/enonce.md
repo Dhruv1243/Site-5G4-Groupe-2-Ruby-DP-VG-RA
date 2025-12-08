@@ -1,9 +1,6 @@
 +++
 title = "Exercice : Menu interactif en Ruby"
-date = "2025-12-08"
 +++
-
-# Exercice : Création d'un Menu interactif en Ruby
 
 ## Contexte
 
@@ -71,3 +68,129 @@ def menu
     end
   end
 end
+```
+
+<details>
+  <summary style="cursor: pointer;"><strong>Corrigé</strong></summary>
+
+  ```ruby
+  # Classe représentant une tâche
+class Tache
+  attr_accessor :nom, :terminee
+
+  def initialize(nom)
+    @nom = nom
+    @terminee = false
+  end
+
+  def marquer_terminer
+    @terminee = true
+  end
+
+  def to_s
+    statut = @terminee ? "[X]" : "[ ]"
+    "#{statut} #{@nom}"
+  end
+end
+
+# Classe représentant la liste de tâches
+class ListeDeTaches
+  def initialize
+    @taches = []
+  end
+
+  def ajouter_tache(nom)
+    @taches << Tache.new(nom)
+  end
+
+  def afficher_taches
+    if @taches.empty?
+      puts "Aucune tâche pour le moment."
+    else
+      puts "\n=== Liste des tâches ==="
+      @taches.each_with_index do |tache, index|
+        puts "#{index + 1}. #{tache}"
+      end
+    end
+  end
+
+  def marquer_terminer(index)
+    index -= 1
+    if index_valide?(index)
+      @taches[index].marquer_terminer
+      puts "Tâche marquée comme terminée."
+    else
+      puts "Numéro invalide."
+    end
+  end
+
+  def supprimer_tache(index)
+    index -= 1
+    if index_valide?(index)
+      tache = @taches.delete_at(index)
+      puts "Tâche supprimée : #{tache.nom}"
+    else
+      puts "Numéro invalide."
+    end
+  end
+
+  private
+
+  def index_valide?(index)
+    index >= 0 && index < @taches.length
+  end
+end
+
+# MÉTHODE MENU
+def menu
+  liste = ListeDeTaches.new
+
+  loop do
+    puts "\n=== Menu ==="
+    puts "1. Ajouter une tâche"
+    puts "2. Afficher toutes les tâches"
+    puts "3. Marquer une tâche comme terminée"
+    puts "4. Supprimer une tâche"
+    puts "5. Quitter"
+    print "Choisissez une option : "
+    choix = gets.chomp.to_i
+
+    case choix
+    when 1
+      print "Nom de la tâche : "
+      nom = gets.chomp
+      liste.ajouter_tache(nom)
+      puts "Tâche ajoutée !"
+
+    when 2
+      liste.afficher_taches
+
+    when 3
+      print "Numéro de la tâche à marquer comme terminée : "
+      index = gets.chomp.to_i
+      liste.marquer_terminer(index)
+
+    when 4
+      print "Numéro de la tâche à supprimer : "
+      index = gets.chomp.to_i
+      liste.supprimer_tache(index)
+
+    when 5
+      puts "Au revoir !"
+      break
+
+    else
+      puts "Option invalide. Réessayez."
+    end
+  end
+end
+
+# Lancer le programme
+menu
+
+  ```
+
+
+
+
+</details>
