@@ -1,22 +1,22 @@
 +++
-title = "Exercices pratiques"
+title = "Exercice pratique"
 weight = 3
 +++
 
 ## Vue d'ensemble
 
-Cette section contient des exercices pratiques pour mettre en application les concepts de Ruby présentés dans les notes de cours.
+Cette section contient un exercice pratique pour mettre en application les concepts de Ruby présentés dans les notes de cours.
 
-Chaque exercice est conçu pour être complété en **1 à 2 heures** et inclut :
+L'exercice est conçu pour être complété en **1 à 2 heures** et inclut :
 - 📝 Un énoncé détaillé avec les objectifs pédagogiques
 - 💡 Des indices pour vous guider
 - ✅ Un corrigé complet et commenté
 
 ---
 
-## Liste des exercices
+## Exercice
 
-### 1. [Gestion de Contacts](gestion_contacts)
+### [Gestion de Contacts](gestion_contacts)
 **Durée** : ~1 heure  
 **Concepts** : Classes, objets, collections, menu interactif
 
@@ -31,7 +31,7 @@ Créez un gestionnaire de contacts qui permet d'ajouter, modifier, supprimer et 
 
 ---
 
-## Comment aborder ces exercices
+## Comment aborder cet exercice
 
 > [!tip] Méthodologie recommandée
 > 
@@ -46,7 +46,7 @@ Créez un gestionnaire de contacts qui permet d'ajouter, modifier, supprimer et 
 
 ## Prérequis
 
-Avant de commencer ces exercices, vous devriez avoir lu les notes de cours sur :
+Avant de commencer cet exercice, vous devriez avoir lu les notes de cours sur :
 - Les types de données
 - Les variables
 - Les conditions
@@ -86,8 +86,3 @@ Pour un mode interactif (REPL) :
 ```bash
 irb
 ```
-
----
-
-> [!note] Note
-> D'autres exercices seront ajoutés progressivement pour couvrir l'ensemble des concepts du langage Ruby.
