@@ -6,7 +6,7 @@ title: "Les boucles"
 Une boucle est un mécanisme qui exécute plusieurs fois un même bloc de code en fonction d'une condition, généralement lorsqu’elle est vraie. Cependant, utiliser une condition incomplète ou mettre la valeur true directement comme condition peut provoquer une boucle infinie. 
 
 
-# while 
+## while 
 
 La boucle `while` exécute le même code tant que cette dernière est vraie. La boucle s’arrête lorsque la condition est fausse. 
 
@@ -33,7 +33,7 @@ while i == 1
 end
 ```
 
-# until
+## until
 La boucle `until` est l’inverse de while, il exécute tant que cette dernière est fausse. La boucle s’arrête lorsque la condition est vraie. 
 
 Exemple d’une boucle `until`:
@@ -59,7 +59,7 @@ while i == 0
 end
 ```
 
-# do...while
+## do...while
 La boucle `do... while` exécute du code en boucle jusqu’à que la condition soit fausse. Contrairement à la boucle `while`, la condition est vérifiée à la fin de la boucle, ce qui garantit que le bloc de code s’exécute au moins une fois, même si la condition est fausse dès le départ. 
 
 En ruby, il y a deux façons de l'utiliser, la plus courante est avec `loop do... break if [condition]` et l’alternative (moins recommandé) est avec `begin... end while [condition]`
@@ -106,7 +106,7 @@ loop do
 end
 ```
 
-# for
+## for
 La boucle `for` est une structure de contrôle qui permet d’itérer sur une collection (plage de nombres, tableau, etc.) en utilisant une variable temporaire qui prend successivement chaque valeur de cette collection en ordre croissant. 
 
 3 façons d'utiliser `for`:
