@@ -77,14 +77,14 @@ Un opérateur de comparaison sert à comparer deux valeurs et retourne un boolé
 
 If (si) vérifie la condition et si c’est vrai, alors (then) un code sera exécuté. 
 
-L’utilisation du then n’est pas obligatoire mais il est surtout utilisé lorsque la condition et le bloc à exécuter sont écrits sur une ligne pour faciliter la lisibilité du code.  
+L’utilisation du `then` n’est pas obligatoire mais il est surtout utilisé lorsque la condition et le bloc à exécuter sont écrits sur une ligne pour faciliter la lisibilité du code.  
 
-Exemple sans then :
+Exemple avec then :
 
 ```bash
 x = 10
 
-if (x > 5)
+if (x > 5) then
   puts "x est supérieur que 5"
 end
 ```
@@ -94,7 +94,7 @@ Exemple sans then :
 ```bash
 x = 10
 
-if (x > 5) sans
+if (x > 5)
   puts "x est supérieur que 5"
 end
 ```
@@ -111,7 +111,7 @@ if (x > 5) then puts "x est supérieur que 5" end
 
 Pour exécuter du code lorsqu’il est faux, on ajoute else (sinon).  
 
-Exemple sans then :
+Exemple:
 
 ```bash
 x = 4
