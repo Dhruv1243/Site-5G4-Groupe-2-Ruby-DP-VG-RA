@@ -126,3 +126,59 @@ end
 # Si ... sinon si 
 
 Si on souhaite exécuter du code en fonction de plusieurs conditions, alors l’utilisation du elsif (sinon si) sera utilisé pour tester d’autres conditions et else sera utiliser 
+
+Exemples:
+```bash
+#Exemple 1
+x = 100
+
+if x >= 100
+  puts "Note parfaite" # <- Affiche cette ligne
+elsif x >= 90
+  puts "Très bien"
+elsif x >= 80
+  puts "Bien"
+elsif x >= 70
+  puts "Assez bien"
+elsif x >= 60
+  puts "Passable"
+else
+  puts "Échec"
+end
+```
+```bash
+#Exemple 2
+x = 65
+
+if x >= 100
+  puts "Note parfaite"
+elsif x >= 90
+  puts "Très bien"
+elsif x >= 80
+  puts "Bien"
+elsif x >= 70
+  puts "Assez bien"
+elsif x >= 60
+  puts "Passable" # <- Affiche cette ligne
+else
+  puts "Échec"
+end
+```
+```bash
+#Exemple 3
+x = 45
+
+if x >= 100
+  puts "Note parfaite"
+elsif x >= 90
+  puts "Très bien"
+elsif x >= 80
+  puts "Bien"
+elsif x >= 70
+  puts "Assez bien"
+elsif x >= 60
+  puts "Passable"
+else
+  puts "Échec" # <- Affiche cette ligne
+end
+```
