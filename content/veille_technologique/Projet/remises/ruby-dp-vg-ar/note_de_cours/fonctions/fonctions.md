@@ -1,5 +1,5 @@
 ---
-title: "Les fonctions en Ruby"
+title: "Les fonctions en Ruby" 
 ---
 
 En Ruby, une fonction — qu’on appelle **méthode** — se définit avec le mot-clé `def` et doit toujours se terminer par `end`.  
